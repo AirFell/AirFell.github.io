@@ -63,28 +63,27 @@
 
 <section class="engine"><a href="https://mobirise.co/k">free bootstrap templates</a></section><section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-after-navbar" id="content5-2z" data-rv-view="188" style="background-color: rgb(239, 239, 239);">
     
+
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 500,
+        height: 500,
+        channel: "airfell"
+      });
+    </script>
+  
+  
     <div class="mbr-section__container container mbr-section__container--isolated" style="padding-top: 93px; padding-bottom: 93px;">
         <div class="mbr-header mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h3 class="mbr-header__text"><a href="http://twitch.tv/airfell" target="_blank">Twitch.tv/AirFell</a></h3>
-              
-              <iframe 
-        src="http://player.twitch.tv/?channel=AirFell" 
-        height="720" 
-        width="1280" 
-        frameborder="0" 
-        scrolling="no"
-        allowfullscreen="true">
-    </iframe>
-              
-    <iframe frameborder="0" 
-        scrolling="yes" 
-        id="chat_embed" 
-        src="http://www.twitch.tv/AirFell/chat" 
-        height="720" 
-        width="1280">
-    </iframe>
-                
             </div>
         </div>
     </div>
